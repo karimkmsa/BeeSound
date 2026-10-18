@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeSound</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid checkout-page-container">
+
+        <!-- Header -->
+        <div class="row align-items-center checkout-page-header">
+            <div class="col">
+                <h1 class="checkout-page-title">Checkout</h1>
+            </div>
+
+            <div class="col-auto">
+                <a href="index.html" class="checkout-page-back-link">
+                    <span class="checkout-page-arrow">&larr;</span>
+                    Back To Shopping
+                </a>
+            </div>
+        </div>
+
+        <!-- Checkout form -->
+        <form class="checkout-page-form" action="#" method="post">
+
+            <!-- Shipping information -->
+            <div class="checkout-page-shipping">
+                <div class="mb-4">
+                    <input type="text" name="shippingAddress" class="form-control checkout-page-input"
+                        placeholder="Enter Your Shipping Address" autocomplete="street-address" required>
+                </div>
+
+                <div>
+                    <input type="tel" name="phoneNumber" class="form-control checkout-page-input"
+                        placeholder="Enter Your Phone Number" autocomplete="tel" required>
+                </div>
+            </div>
+
+            <!-- Card details -->
+            <div class="checkout-page-card-section">
+                <h2 class="checkout-page-card-title">Card Details</h2>
+
+                <div class="mb-4">
+                    <input type="text" name="cardNumber" class="form-control checkout-page-input"
+                        placeholder="Enter Your Card Number" inputmode="numeric" autocomplete="cc-number" maxlength="19"
+                        required>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col checkout-page-expiration-col">
+                        <input type="text" name="expirationDate"
+                            class="form-control checkout-page-input checkout-page-expiration"
+                            placeholder="Expiration Date" autocomplete="cc-exp" maxlength="7" required>
+                    </div>
+
+                    <div class="col-auto checkout-page-cvc-col">
+                        <input type="password" name="cvc" class="form-control checkout-page-input checkout-page-cvc"
+                            placeholder="CVC" inputmode="numeric" autocomplete="cc-csc" maxlength="4" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order button -->
+            <div class="checkout-page-order-container">
+                <button type="submit" class="btn checkout-page-order-btn">
+                    Order
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
